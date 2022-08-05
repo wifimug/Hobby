@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 const BlogPage = ({ data }) => {
@@ -21,10 +22,10 @@ const BlogPage = ({ data }) => {
 
 export const query = graphql`
 query {
-    allFile {
-    nodes {
-        name
-    }
+    allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
+        nodes {
+            name
+        }
     }
 }
 `

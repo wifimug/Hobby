@@ -7,13 +7,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      }
-    },
+    
     {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
@@ -38,5 +32,11 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  }, {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: `blog`,
+      path: `${__dirname}/blog`,
+    }
+  },]
 };
