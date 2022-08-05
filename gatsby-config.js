@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: "/Hobby",
   siteMetadata: {
     title: `hobbies`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://wifimug.github.io`
   },
   plugins: [{
     resolve: 'gatsby-plugin-google-analytics',
