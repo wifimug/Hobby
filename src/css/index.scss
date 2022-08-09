@@ -1,0 +1,21 @@
+@import './styles.scss';
+
+p {
+    color: $dark-red;
+}
+
+h1 {
+    color: $peach;
+}
+
+body {
+    // background-color: $bg;
+    background: linear-gradient(180deg, $bg 0%, $bg 10%, white 100%) no-repeat center fixed;
+    background-size: cover;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+    padding:1000px;
+}

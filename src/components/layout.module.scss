@@ -1,0 +1,111 @@
+@import '../css/styles.scss';
+
+.container {
+
+    
+    width: 100% vw;
+    font-family: sans-serif;
+  }
+
+  .site-container {
+    margin: auto;
+    width: 50%;
+    display: block;
+  }
+
+  .site-title {
+    font-size: 3rem;
+    color: $mint;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 0%;
+  }
+
+  .nav-bar {
+    border-bottom: 2px solid $peach;
+  }
+
+
+  .heading {
+    color: $peach;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0%;
+    float: right;
+  }
+
+  .nav-link-item {
+    padding-right: 5rem;
+  }
+  .nav-link-text {
+    color: $dark-red;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+.accent-container {
+  overflow: hidden;
+  width: 90%;
+  padding-top: 2rem;
+  position: relative;
+}
+
+  .rectangle-accent {
+    display: inline-block;
+    width: 90%;
+    height: 20%;
+    background-color: $cream;
+  }
+
+  .semi-circle-accent {
+    display: inline-block;
+    width: 75%;
+    height: 50vh;
+    // border-bottom-right-radius: 15%;
+    // border-top-right-radius: 15%;
+    // border-start-start-radius: 50% 50%;
+    border-start-end-radius: 50% 50%;
+    border-end-end-radius: 50% 50%;
+    background-color: $cream;
+    z-index: -1;
+  }
+
+  .watermelon-circle-accent {
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background: $watermelon;
+    //left: 500px;
+    right: 90%;
+  }
+
+  .circle-ring-accent {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: transparent;
+    border: 2px solid $light-peach;
+    //left: 500px;
+    right: 80%;
+    top: 20%;
+  }
+  
