@@ -11,8 +11,9 @@ import {
     navLinkText,
     accentContainer,
     semiCircleAccent,
-    circleAccent,
-    circleRingAccent
+    watermelonCircleAccent,
+    circleRingAccent,
+    contentContainer
      } from './layout.module.scss'
 
 const Layout = ({ pageTitle, children }) => {
@@ -51,17 +52,22 @@ const Layout = ({ pageTitle, children }) => {
                         </ul>
                     </nav>
                 </div>
+                
             </div>
             <div className={accentContainer}>
                 <main className={heading}>
                     <div className={semiCircleAccent}>
-                        <div className={siteContainer}>
+                        <div className={contentContainer}>
                             <h1>{pageTitle}</h1>
                             {children}
                         </div>
-                        <div className={circleAccent}></div>
+                        </div> 
+
+                        
+                        <div className={watermelonCircleAccent}></div>
                         <div className={circleRingAccent}></div>
-                    </div>
+                                               
+                    
                 </main>
             </div>
         </div>

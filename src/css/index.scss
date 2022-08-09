@@ -19,3 +19,60 @@ body {
     max-width: 1200px;
     padding:1000px;
 }
+
+.accent-container {
+    width: 90%;
+    padding-top: 2rem;
+    position: relative;
+    display: inline;
+  }
+  
+    .rectangle-accent {
+      display: inline-block;
+      width: 90%;
+      height: 20%;
+      background-color: $cream;
+    }
+  
+    .semi-circle-accent {
+      display: inline-block;
+      width: 75%;
+      height: 50vh;
+      // border-bottom-right-radius: 15%;
+      // border-top-right-radius: 15%;
+      // border-start-start-radius: 50% 50%;
+      border-start-end-radius: 20% 50%;
+      border-end-end-radius: 20% 50%;
+      background-color: $cream;
+      z-index: -1;
+    }
+  
+    .watermelon-circle-accent {
+      position: absolute;
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
+      background: $watermelon;
+      //left: 500px;
+      right: 80%;
+      top: 30%;
+    }
+  
+    .circle-ring-accent {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background: transparent;
+      border: 2px solid $light-peach;
+      //left: 500px;
+      right: 80%;
+      top: 20%;
+    }
+
+    img {
+        position: absolute;
+        right: 50%;
+        border-radius: 50%;
+    }
